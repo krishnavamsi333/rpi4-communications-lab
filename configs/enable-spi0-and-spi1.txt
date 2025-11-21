@@ -1,0 +1,13 @@
+# --- Enable SPI0 ---
+dtparam=spi=on
+
+# SPI0 pins:
+#   MOSI = GPIO10
+#   MISO = GPIO9
+#   SCLK = GPIO11
+#   CE0 = GPIO8
+#   CE1 = GPIO7
+
+# --- Enable SPI1 with 2 chip selects ---
+# Creates /dev/spidev1.0 and /dev/spidev1.1
+dtoverlay=spi1-2cs,cs0_pin=17,cs1_pin=16

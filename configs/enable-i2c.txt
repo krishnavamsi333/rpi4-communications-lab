@@ -1,0 +1,5 @@
+# --- Enable I2C1 on GPIO2/3 ---
+dtparam=i2c_arm=on
+
+# Optional: Fast mode (400kHz)
+# dtparam=i2c_arm_baudrate=400000

@@ -1,0 +1,9 @@
+# --- Enable MCP2515 CAN controller ---
+# SPI bus: spi0-0
+# Oscillator: 16MHz (most MCP2515 boards)
+# Interrupt pin: GPIO25 (adjust if needed)
+
+dtoverlay=mcp2515,spi0-0,oscillator=16000000,interrupt=25
+
+# Make sure SPI is enabled:
+dtparam=spi=on

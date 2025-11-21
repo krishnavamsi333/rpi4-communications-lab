@@ -1,0 +1,2 @@
+# --- Enable secondary I2C bus I2C0 for camera/display ---
+dtparam=i2c_vc=on

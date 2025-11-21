@@ -1,0 +1,2 @@
+# --- Disable audio to free PWM0/PWM1 pins (GPIO18 & GPIO19) ---
+dtparam=audio=off

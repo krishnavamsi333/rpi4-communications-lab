@@ -1,0 +1,14 @@
+# --- Enable full UART0 on GPIO14 (TX) and GPIO15 (RX) ---
+
+# Enable hardware UART
+enable_uart=1
+
+# Move Bluetooth to mini-UART
+dtoverlay=miniuart-bt
+
+# Keep mini-UART clock stable (important)
+core_freq=250
+
+# IMPORTANT:
+# - Disable login console in raspi-config if needed
+# - Edit /boot/cmdline.txt to remove 'console=serial0,115200'

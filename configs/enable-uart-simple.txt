@@ -1,0 +1,2 @@
+# --- Enable main UART (ttyAMA0) ---
+enable_uart=1
